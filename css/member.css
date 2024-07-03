@@ -1,0 +1,359 @@
+.hero_area.hero_area--member {
+    height: auto;
+    min-height: 156px;
+    margin-bottom: 50px;
+}
+
+.header_section {
+    width: 100vw;
+    height: 100%;
+    background-image: url('../images/pizza-background-bbb930p128pn1xg7.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.member-section {
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.member-section .title {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.3;
+    line-height: 1.5;
+    text-transform: uppercase;
+    position: relative;
+    width: fit-content;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+.member-section .title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #353b48;
+}
+
+.member-section-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.member-section-wrapper .member-section-left {
+    width: 48%;
+    margin-right: 4%;
+}
+
+.member-section-wrapper .member-section-left .wrapper-image {
+    display: block;
+    width: 100%;
+    height: 620px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.member-section-left .wrapper-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.member-section-wrapper .member-section-right {
+    width: 48%;
+}
+
+.member-section-wrapper .member-section-right .form-register-member {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.member-section .list-benefit {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+.member-section .list-benefit .block-benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 12px;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right bottom, #74b9ff, #a29bfe);
+}
+
+.member-section .list-benefit .block-benefit .wrapper-image {
+    display: block;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.member-section .list-benefit .block-benefit .wrapper-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.member-section .list-benefit .block-benefit p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #2f3640;
+}
+
+.container-walk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.container-walk > .walk {
+    width: 150px;
+    height: 300px;
+    background-image: url(../images/walk.png);
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    animation: wEffect 1s steps(8) infinite;
+}
+
+.member-section .wrapper-benefit {
+    animation: slide-form-left 0.5s linear;
+}
+
+.member-section .wrapper-register {
+    animation: slide-form-right 0.5s linear;
+}
+
+@keyframes wEffect{
+    from{
+        background-position: 0px;
+    }to{
+        background-position: -1200px;
+    }
+}
+
+@keyframes slide-form-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-1000px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes slide-form-right {
+    0% {
+      opacity: 0;
+      transform: translateX(1000px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+/* Tổng thể */
+body {
+  color: #2C3E50 !important; /* Màu chữ chính từ logo */
+  background-color: #F5F5F5 !important; /* Màu nền chính từ logo */
+}
+
+/* Header Section */
+.header_section {
+  background-color: #2C3E50 !important; /* Màu nền header từ logo */
+}
+
+.header_section .navbar-nav .nav-link {
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.header_section .navbar-nav .nav-link:hover,
+.header_section .navbar-nav .nav-item.active .nav-link {
+  color: #F1C40F !important; /* Màu vàng từ logo khi hover */
+}
+
+.user_option .user_link,
+.user_option .checkout_link,
+.user_option .cart_link {
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.user_option .user_link:hover,
+.user_option .checkout_link:hover,
+.user_option .cart_link:hover {
+  color: #F1C40F !important; /* Màu vàng từ logo khi hover */
+}
+
+/* Member Section */
+.member-section {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #F5F5F5 !important; /* Màu nền chính từ logo */
+}
+
+.member-section .title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2C3E50 !important; /* Màu chữ chính từ logo */
+  letter-spacing: 0.3;
+  line-height: 1.5;
+  text-transform: uppercase;
+  position: relative;
+  width: fit-content;
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+
+.member-section .title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F1C40F !important; /* Màu vàng từ logo */
+}
+
+.member-section-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member-section-wrapper .member-section-left {
+  width: 48%;
+  margin-right: 4%;
+}
+
+.member-section-wrapper .member-section-left .wrapper-image {
+  display: block;
+  width: 100%;
+  height: 620px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.member-section-left .wrapper-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.member-section-wrapper .member-section-right {
+  width: 48%;
+}
+
+.member-section-wrapper .member-section-right .form-register-member {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.member-section-wrapper .member-section-right .form-register-member input,
+.member-section-wrapper .member-section-right .form-register-member button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.member-section-wrapper .member-section-right .form-register-member button {
+  background-color: #2C3E50 !important; /* Màu Navy */
+  color: #FFFFFF !important;
+}
+
+
+.member-section-wrapper .member-section-right .form-register-member button:hover {
+  background-color: #E67E22 !important; /* Màu cam khi hover */
+}
+
+.member-section .list-benefit {
+  display: grid;
+  column-gap: 20px;
+}
+
+.member-section .list-benefit .block-benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 12px;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right bottom, #74b9ff, #a29bfe);
+}
+
+.member-section .list-benefit .block-benefit .wrapper-image {
+  display: block;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.member-section .list-benefit .block-benefit .wrapper-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.member-section .list-benefit .block-benefit p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2C3E50 !important; /* Màu chữ chính từ logo */
+}
+
+/* Footer Section */
+.footer_section {
+  background-color: #2C3E50 !important; /* Màu nền footer từ logo */
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+  padding: 40px 0;
+  width: 100%;
+}
+
+.footer_section a {
+  color: #F5F5F5 !important; /* Màu chữ liên kết từ logo */
+}
+
+.footer_section a:hover {
+  color: #E74C3C !important; /* Màu chữ khi hover từ logo */
+}
+
+.footer_section .footer_social a {
+  background-color: #F5F5F5 !important; /* Màu nền của biểu tượng */
+  color: #2C3E50 !important; /* Màu của biểu tượng */
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 10px;
+}

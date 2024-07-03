@@ -1,0 +1,208 @@
+/* Tổng thể */
+body {
+  color: #2C3E50 !important; /* Màu chữ chính từ logo */
+  background-color: #F5F5F5 !important; /* Màu nền chính từ logo */
+}
+
+/* Header Section */
+.header_section {
+  background-color: #2C3E50 !important; /* Màu nền header từ logo */
+}
+
+.header_section .navbar-brand span,
+.header_section .navbar-nav .nav-link {
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+}
+
+.header_section .navbar-nav .nav-link:hover,
+.header_section .navbar-nav .nav-item.active .nav-link {
+  color: #F1C40F !important; /* Màu vàng từ logo khi hover */
+}
+
+.user_option .user_link,
+.user_option .checkout_link,
+.user_option .cart_link svg {
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+}
+
+.user_option .user_link:hover,
+.user_option .checkout_link:hover,
+.user_option .cart_link:hover svg {
+  color: #F1C40F !important; /* Màu vàng từ logo khi hover */
+}
+
+/* List News Section */
+.news-subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa các phần tử */
+  margin: 50px auto;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+
+.list-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa các box */
+  gap: 30px;
+  width: 100%;
+}
+
+.list-news .title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+  position: relative;
+  margin-top: 50px; /* Khoảng cách với header */
+  margin-bottom: 20px; /* Khoảng cách xuống dưới */
+}
+
+.list-news .box {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF !important; /* Nền trắng */
+  border: 2px solid #28A745 !important; /* Đường viền màu xanh lá */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 900px; /* Tăng chiều rộng của box bài viết */
+}
+
+.list-news .box img {
+  width: 100%;
+  max-height: 300px; /* Chiều cao không thay đổi */
+  object-fit: cover;
+}
+
+.list-news .box .content {
+  padding: 20px;
+  text-align: center; /* Căn giữa nội dung */
+}
+
+.list-news .box .content h5 {
+  font-size: 24px; /* Kích thước chữ */
+  font-weight: 700;
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+  margin-bottom: 15px;
+}
+
+.list-news .box .content p {
+  font-size: 16px; /* Kích thước chữ */
+  font-weight: 500;
+  line-height: 1.6;
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+  margin-bottom: 20px; /* Khoảng cách dưới nội dung */
+}
+
+.list-news .box .content .detail-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #F1C40F !important; /* Màu vàng từ logo */
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.list-news .box .content .detail-button:hover {
+  background-color: #E67E22 !important; /* Màu cam khi hover */
+  color: #F5F5F5 !important; /* Màu chữ khi hover */
+}
+
+/* Subscribe Form */
+.subscribe-form {
+  background-color: #FFFFFF !important; /* Nền trắng */
+  border: 2px solid #28A745 !important; /* Đường viền màu xanh lá */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 900px; /* Tăng kích thước của form đăng ký để bằng với các box tin tức */
+}
+
+.subscribe-form h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+  margin-bottom: 15px;
+}
+
+.subscribe-form p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+  margin-bottom: 20px; /* Khoảng cách dưới nội dung */
+}
+
+.subscribe-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #28A745; /* Đường viền màu xanh lá */
+  border-radius: 5px;
+  outline: none;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  background-color: #F1C40F !important; /* Màu vàng từ logo */
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #E67E22 !important; /* Màu cam khi hover */
+  color: #F5F5F5 !important; /* Màu chữ khi hover */
+}
+
+/* Khoảng cách dưới box cuối cùng */
+.list-news .box:last-child {
+  margin-bottom: 50px;
+}
+
+/* Footer Section */
+.footer_section {
+  background-color: #2C3E50 !important; /* Màu nền footer từ logo */
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+}
+
+.footer_section a {
+  color: #F5F5F5 !important; /* Màu chữ liên kết từ logo */
+}
+
+.footer_section a:hover {
+  color: #E74C3C !important; /* Màu chữ khi hover từ logo */
+}
+
+.footer_section .footer_social a {
+  background-color: #F5F5F5 !important; /* Màu nền của biểu tượng */
+  color: #2C3E50 !important; /* Màu của biểu tượng */
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 10px;
+}

@@ -1,0 +1,164 @@
+/* Tổng thể */
+body {
+  color: #2C3E50 !important; /* Màu chữ chính từ logo */
+  background-color: #F5F5F5 !important; /* Màu nền chính từ logo */
+}
+
+/* Header Section */
+.header_section {
+  background-color: #2C3E50 !important; /* Màu nền header từ logo */
+  padding: 20px 0;
+  width: 100%;
+}
+
+.header_section .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+
+.header_section .navbar-nav .nav-link {
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.header_section .navbar-nav .nav-link:hover,
+.header_section .navbar-nav .nav-item.active .nav-link {
+  color: #F1C40F !important; /* Màu vàng từ logo khi hover */
+}
+
+.user_option .user_link,
+.user_option .checkout_link,
+.user_option .cart_link {
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.user_option .user_link:hover,
+.user_option .checkout_link:hover,
+.user_option .cart_link:hover {
+  color: #F1C40F !important; /* Màu vàng từ logo khi hover */
+}
+
+/* Reservation Section */
+.reservation_section {
+  background: url("../datban (img)/b54d9719620ddd06547b50a6d2e09c02.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 60px 0;
+  color: #F5F5F5 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading_container {
+  text-align: center;
+  display: block;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.heading_container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFFFFF !important;
+}
+
+.heading_container p {
+  font-size: 18px;
+  color: #FFFFFF !important; /* Màu chữ từ logo */
+  text-align: center;
+}
+
+.reservation_form {
+  background-color: rgba(0, 0, 0, 0.6); /* Nền đen trong suốt */
+  border-radius: 10px; /* Bo góc */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Đổ bóng */
+  max-width: 800px; /* Chiều ngang dài ra */
+  margin: 0 auto;
+}
+
+.reservation_form .form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.reservation_form .form-control {
+  border: none;
+  border-radius: 5px; /* Bo góc */
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.reservation_form .form-group.flex-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservation_form .form-group.flex-group .form-control {
+  width: 100%; /* Chiều rộng của input ngày tháng năm và giờ */
+}
+
+.input_container {
+  position: relative;
+  width: 48%;
+}
+
+.input_container .form-control {
+  width: 100%;
+}
+
+.input_container select {
+  text-align: center; /* Căn giữa chữ trong input */
+}
+
+.reservation_form .form-group .input_icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #F5F5F5;
+}
+
+.reservation_form .btn_box {
+  text-align: center;
+}
+
+.reservation_form .btn-primary {
+  background-color: #F1C40F !important; /* Màu vàng từ logo */
+  border: none;
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+  padding: 10px 20px;
+  border-radius: 5px; /* Bo góc */
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.reservation_form .btn-primary:hover {
+  background-color: #E67E22 !important; /* Màu cam khi hover */
+  color: #F5F5F5 !important; /* Màu chữ khi hover */
+}
+
+.footer_section a {
+  color: #F5F5F5 !important; /* Màu chữ liên kết từ logo */
+}
+
+.footer_section a:hover {
+  color: #E74C3C !important; /* Màu chữ khi hover từ logo */
+}
+
+.footer_section .footer_social a {
+  background-color: #F5F5F5 !important; /* Màu nền của biểu tượng */
+  color: #2C3E50 !important; /* Màu của biểu tượng */
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 10px;
+}

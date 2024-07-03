@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*==============================about section 1=========================================*/
+
+.about_section {
+  position: relative; /* Tạo lớp chồng lên cho nội dung */
+}
+
+.about_section::before { /* Tạo lớp phủ trắng trong suốt cho nội dung */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt 80% */
+  z-index: 1; /* Đặt lớp phủ phía trên ảnh nền */
+}
+
+.about_section::after { /* Tạo ảnh nền */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../about (img)/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0; /* Đặt ảnh nền phía dưới lớp phủ */
+}
+
+.about_section .col-md-6 {
+  position: relative;
+  z-index: 2; /* Đưa nội dung lên trên lớp phủ */
+  padding: 20px;
+  color: black; /* Đặt màu chữ thành đen */
+}
+
+/*============================== end about section 1=========================================*/
+
+/*==============================about section 2=========================================*/
+
+.image-content-section {
+  background-image: url("../about (img)/2.jpg"); /* Đường dẫn đến ảnh nền chìm */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0; /* Thêm padding để tạo khoảng cách */
+  position: relative; /* Để định vị lớp phủ */
+}
+
+.image-content-section::before { /* Lớp phủ mờ cho ảnh nền */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu đen trong suốt 50% */
+  z-index: -1;
+}
+
+.image-grid {
+  display: flex; /* Sử dụng flexbox để sắp xếp ảnh */
+  justify-content: space-around; /* Khoảng cách đều giữa các ảnh */
+  margin-bottom: 30px; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+.image-grid img {
+  max-width: 48%; /* Điều chỉnh độ rộng tối đa của ảnh */
+  height: auto;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt cho nội dung */
+  padding: 20px;
+  border-radius: 10px; /* Bo góc cho phần nội dung */
+  text-align: center; /* Căn giữa nội dung */
+}
+
+/*==============================about section 2=========================================*/
+
+
+/*==============================about section 3=========================================*/
+
+.featured-section {
+  background-image: url("../about (img)/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0;
+  position: relative;
+}
+
+.featured-section .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px; /* Khoảng cách giữa hai hàng */
+}
+
+.featured-section .content {
+  text-align: left;
+}
+
+.featured-section .image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.featured-section .row:first-child {
+  margin-bottom: 50px; /* Khoảng cách bên dưới */
+}
+
+.col-md-4 img {
+  width: 85%; /* Đảm bảo ảnh luôn chiếm toàn bộ chiều rộng của div */
+  height: auto;  /* Cho phép chiều cao tự động điều chỉnh */
+  object-fit: cover; /* Giữ nguyên tỷ lệ ảnh và đảm bảo nó bao phủ toàn bộ div */
+}
+
+.col-md img {
+  width: 95%; /* Đảm bảo ảnh luôn chiếm toàn bộ chiều rộng của div */
+  height: auto;  /* Cho phép chiều cao tự động điều chỉnh */
+  object-fit: cover; /* Giữ nguyên tỷ lệ ảnh và đảm bảo nó bao phủ toàn bộ div */
+}
+
+/*============================== end about section 3=========================================*/
+
+/* Tổng thể */
+body {
+  color: #2C3E50 !important; /* Màu chữ chính từ logo */
+  background-color: #F5F5F5 !important; /* Màu nền chính từ logo */
+}
+
+/* Header Section */
+.header_section {
+  background-color: #2C3E50 !important; /* Màu nền header từ logo */
+}
+
+.header_section .navbar-brand span,
+.header_section .navbar-nav .nav-link {
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+}
+
+.header_section .navbar-nav .nav-link:hover,
+.header_section .navbar-nav .nav-item.active .nav-link {
+  color: #F1C40F !important; /* Màu vàng từ logo khi hover */
+}
+
+.user_option .user_link,
+.user_option .checkout_link,
+.user_option .cart_link svg {
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+}
+
+.user_option .user_link:hover,
+.user_option .checkout_link:hover,
+.user_option .cart_link:hover svg {
+  color: #F1C40F !important; /* Màu vàng từ logo khi hover */
+}
+
+
+/* About Section 1 */
+.about_section {
+  position: relative;
+  background-color: #F5F5F5 !important; /* Màu nền trắng kem từ logo */
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.about_section h2 {
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+}
+
+.about_section p,
+.about_section li p {
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+}
+
+.about_section .btn {
+  background-color: #F1C40F !important; /* Màu vàng từ logo */
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+}
+
+.about_section .btn:hover {
+  background-color: #E67E22 !important; /* Màu cam khi hover */
+  color: #F5F5F5 !important; /* Màu chữ khi hover */
+}
+
+/* Image Content Section */
+.image-content-section {
+  background-color: #2C3E50 !important; /* Màu nền từ logo */
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+}
+
+.image-content-section .content {
+  background-color: rgba(255, 255, 255, 0.8) !important; /* Nền trắng trong suốt */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.image-content-section .content h2 {
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+}
+
+.image-content-section .content p {
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+}
+
+/* Featured Section */
+.featured-section {
+  background-color: #2C3E50 !important; /* Màu nền từ logo */
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+}
+
+.featured-section .content {
+  background-color: rgba(255, 255, 255, 0.8) !important; /* Nền trắng trong suốt */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.featured-section .content h2 {
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+}
+
+.featured-section .content p {
+  color: #2C3E50 !important; /* Màu chữ từ logo */
+}
+
+/* Footer Section */
+.footer_section {
+  background-color: #2C3E50 !important; /* Màu nền footer từ logo */
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+}
+
+.footer_section a {
+  color: #F5F5F5 !important; /* Màu chữ liên kết từ logo */
+}
+
+.footer_section a:hover {
+  color: #E74C3C !important; /* Màu chữ khi hover từ logo */
+}
+
+.footer_section .footer_social a {
+  background-color: #F5F5F5 !important; /* Màu nền của biểu tượng */
+  color: #2C3E50 !important; /* Màu của biểu tượng */
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 10px;
+}

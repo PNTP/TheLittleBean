@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Tổng thể */
+body {
+  color: #2C3E50 !important; /* Màu chữ chính từ logo */
+  background-color: #F5F5F5 !important; /* Màu nền chính từ logo */
+}
+
+/* Header Section */
+.header_section {
+  background-color: #2C3E50 !important; /* Màu nền header từ logo */
+}
+
+.header_section .navbar-brand span,
+.header_section .navbar-nav .nav-link {
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+}
+
+.header_section .navbar-nav .nav-link:hover,
+.header_section .navbar-nav .nav-item.active .nav-link {
+  color: #F1C40F !important; /* Màu vàng từ logo khi hover */
+}
+
+.user_option .user_link,
+.user_option .checkout_link,
+.user_option .cart_link svg {
+  color: #F5F5F5 !important; /* Màu chữ từ logo */
+}
+
+.user_option .user_link:hover,
+.user_option .checkout_link:hover,
+.user_option .cart_link:hover svg {
+  color: #F1C40F !important; /* Màu vàng từ logo khi hover */
+}
+
+
+/* Nút bấm */
+.btn1 {
+  background-color: #2C3E50 !important; /* Màu nền nút */
+  color: #F5F5F5 !important; /* Màu chữ nút */
+}
+
+.btn1:hover {
+  background-color: #E74C3C !important; /* Màu nền nút khi hover */
+}
+
+/* Slider Section */
+.slider_section .detail-box {
+  color: #F5F5F5 !important; /* Màu chữ trong slider */
+}
+
+.slider_section .detail-box h1,
+.slider_section .detail-box p {
+  color: #F5F5F5 !important; /* Màu chữ trong slider */
+}
+
+.slider_section .detail-box a {
+  background-color: #2C3E50 !important; /* Màu nền nút trong slider */
+  color: #F5F5F5 !important; /* Màu chữ nút trong slider */
+}
+
+.slider_section .detail-box a:hover {
+  background-color: #E74C3C !important; /* Màu nền nút khi hover trong slider */
+}
+
+/* Offer Section */
+.offer_section .box {
+  background-color: #2C3E50 !important; /* Màu nền khuyến mãi */
+  color: #F5F5F5 !important; /* Màu chữ khuyến mãi */
+}
+
+.offer_section .box .detail-box h5,
+.offer_section .box .detail-box h6 {
+  color: #F5F5F5 !important; /* Màu chữ khuyến mãi */
+}
+
+.offer_section .box .detail-box h6 span {
+  color: #E67E22 !important; /* Màu điểm nhấn khuyến mãi */
+}
+
+.offer_section .box .detail-box a {
+  background-color: #F1C40F !important; /* Màu vàng từ logo */
+  color: #2C3E50 !important; /* Màu chữ tương phản */
+}
+
+.offer_section .box .detail-box a:hover {
+  background-color: #E67E22 !important; /* Màu cam khi hover */
+  color: #F5F5F5 !important; /* Màu chữ khi hover */
+}
+
+/* Food Section */
+.food_section .box {
+  background-color: #2C3E50 !important; /* Màu nền món ăn */
+  color: #F5F5F5 !important; /* Màu chữ món ăn */
+  border: 2px solid #27AE60 !important; /* Màu viền hình ảnh món ăn */
+}
+
+.food_section .box h5 {
+  color: #F5F5F5 !important; /* Màu chữ tiêu đề món ăn */
+}
+
+.food_section .box p {
+  color: #F5F5F5 !important; /* Màu mô tả món ăn */
+}
+
+/* Book Section */
+.book_section .form_container input,
+.book_section .form_container select {
+  border: 1px solid #2C3E50 !important; /* Đường viền form */
+}
+
+.book_section .btn_box button {
+  background-color: #2C3E50 !important; /* Màu nền nút đặt bàn */
+  color: #F5F5F5 !important; /* Màu chữ nút đặt bàn */
+}
+
+.book_section .btn_box button:hover {
+  background-color: #E74C3C !important; /* Màu nền nút khi hover đặt bàn */
+}
+
+
+/* Footer Section */
+.footer_section {
+  background-color: #2C3E50 !important; /* Màu nền footer */
+  color: #F5F5F5 !important; /* Màu chữ footer */
+}
+
+.footer_section a {
+  color: #F5F5F5 !important; /* Màu chữ liên kết footer */
+}
+
+.footer_section a:hover {
+  color: #E74C3C !important; /* Màu chữ liên kết khi hover footer */
+}
+
+.footer_section .footer_social a {
+  background-color: #F5F5F5 !important; /* Màu nền của biểu tượng */
+  color: #2C3E50 !important; /* Màu của biểu tượng */
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 10px;
+}
